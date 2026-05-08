@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "createdAt": "2026-05-08T03:07:27.083Z",
+  "scope": "project",
+  "operation": "change-to-agents",
+  "entries": [
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.agents\\commands",
+      "kind": "dir",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.claude\\commands",
+      "kind": "symlink",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.factory\\commands",
+      "kind": "symlink",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.codex\\prompts",
+      "kind": "symlink",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.opencode\\commands",
+      "kind": "symlink",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.cursor\\commands",
+      "kind": "symlink",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.gemini\\commands",
+      "kind": "symlink",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.agent\\workflows",
+      "kind": "symlink",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.agents\\hooks",
+      "kind": "dir",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.claude\\hooks",
+      "kind": "symlink",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.factory\\hooks",
+      "kind": "symlink",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.claude\\skills",
+      "kind": "symlink",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.factory\\skills",
+      "kind": "symlink",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.codex\\skills",
+      "kind": "symlink",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.opencode\\skills",
+      "kind": "symlink",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.cursor\\skills",
+      "kind": "symlink",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.gemini\\skills",
+      "kind": "symlink",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.agent\\skills",
+      "kind": "symlink",
+      "action": "create"
+    },
+    {
+      "originalPath": "D:\\Project\\Claude\\ClaudeCodeWorkshop\\.github\\skills",
+      "kind": "symlink",
+      "action": "create"
+    }
+  ]
+}
