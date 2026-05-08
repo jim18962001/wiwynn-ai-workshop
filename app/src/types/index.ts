@@ -28,6 +28,17 @@ export interface Employee {
   phone?: string
 }
 
+export type ActivityAction = 'CREATE' | 'UPDATE' | 'DELETE' | 'LOGIN' | 'LOGOUT'
+
+export interface ActivityLog {
+  id: string
+  userId: string
+  userName: string
+  action: ActivityAction
+  resource: string
+  timestamp: string
+}
+
 export interface Stats {
   totalVehicles: number
   activeVehicles: number
