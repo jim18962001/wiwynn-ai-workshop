@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(openspec new *)",
+      "Bash(openspec status *)",
+      "Bash(openspec instructions *)",
+      "Bash(npm create *)",
+      "Bash(npm install *)",
+      "Bash(npx tailwindcss *)",
+      "Bash(node node_modules/.bin/tailwindcss init -p)",
+      "Bash(npx --yes tailwindcss init -p)",
+      "Bash(npx shadcn@latest add button input label card dialog table select badge skeleton --yes)",
+      "Bash(powershell -Command \"New-Item -ItemType Directory -Force -Path 'd:\\\\Project\\\\Claude\\\\ClaudeCodeWorkshop\\\\app\\\\src\\\\components\\\\ui' | Out-Null; Copy-Item -Path 'd:\\\\Project\\\\Claude\\\\ClaudeCodeWorkshop\\\\app\\\\@\\\\components\\\\ui\\\\*' -Destination 'd:\\\\Project\\\\Claude\\\\ClaudeCodeWorkshop\\\\app\\\\src\\\\components\\\\ui\\\\' -Recurse; Remove-Item -Path 'd:\\\\Project\\\\Claude\\\\ClaudeCodeWorkshop\\\\app\\\\@' -Recurse -Force; Write-Host Done\")",
+      "Bash(npx msw *)",
+      "Bash(npm run *)"
+    ]
+  }
+}
