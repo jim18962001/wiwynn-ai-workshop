@@ -12,7 +12,8 @@
       "Bash(npx shadcn@latest add button input label card dialog table select badge skeleton --yes)",
       "Bash(powershell -Command \"New-Item -ItemType Directory -Force -Path 'd:\\\\Project\\\\Claude\\\\ClaudeCodeWorkshop\\\\app\\\\src\\\\components\\\\ui' | Out-Null; Copy-Item -Path 'd:\\\\Project\\\\Claude\\\\ClaudeCodeWorkshop\\\\app\\\\@\\\\components\\\\ui\\\\*' -Destination 'd:\\\\Project\\\\Claude\\\\ClaudeCodeWorkshop\\\\app\\\\src\\\\components\\\\ui\\\\' -Recurse; Remove-Item -Path 'd:\\\\Project\\\\Claude\\\\ClaudeCodeWorkshop\\\\app\\\\@' -Recurse -Force; Write-Host Done\")",
       "Bash(npx msw *)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(node -e \"const p = JSON.parse\\(require\\('fs'\\).readFileSync\\('package.json','utf8'\\)\\); console.log\\(JSON.stringify\\(p.scripts, null, 2\\)\\)\")"
     ]
   }
 }

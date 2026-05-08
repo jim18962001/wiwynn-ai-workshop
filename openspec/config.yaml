@@ -1,20 +1,47 @@
 schema: spec-driven
 
-# Project context (optional)
-# This is shown to AI when creating artifacts.
-# Add your tech stack, conventions, style guides, domain knowledge, etc.
-# Example:
-#   context: |
-#     Tech stack: TypeScript, React, Node.js
-#     We use conventional commits
-#     Domain: e-commerce platform
+context: |
+  Domain: Vehicle fleet management system (車輛管理系統) — a role-based SPA for managing vehicles and employees.
 
-# Per-artifact rules (optional)
-# Add custom rules for specific artifacts.
-# Example:
-#   rules:
-#     proposal:
-#       - Keep proposals under 500 words
-#       - Always include a "Non-goals" section
-#     tasks:
-#       - Break tasks into chunks of max 2 hours
+  Tech stack:
+  - Frontend: React 19 + TypeScript 6, Vite (app/ subdirectory)
+  - Styling: Tailwind CSS v4 via @tailwindcss/vite plugin (no tailwind.config.js; uses @import "tailwindcss" in CSS)
+  - UI components: shadcn/ui (Zinc colour scheme, Default style) — components live in src/components/ui/
+  - Routing: React Router v7
+  - Server state: TanStack React Query v5 (staleTime 1 min, invalidateQueries on mutation success)
+  - Forms: react-hook-form + zod
+  - Charts: Recharts (PieChart, BarChart)
+  - HTTP: Axios with Bearer token interceptor (baseURL: /api)
+  - Mock API: MSW v2 (browser service worker, started in main.tsx before React mounts)
+  - Auth: AuthContext + localStorage (token + role: "admin" | "user")
+  - Path alias: @ → app/src/
+
+  Conventions:
+  - Git: conventional commits (feat, fix, chore, docs, refactor, test)
+  - Language: UI strings and spec requirements written in Traditional Chinese (繁體中文)
+  - Route protection: ProtectedRoute (auth check) + AdminRoute (role=admin check)
+  - All API endpoints are mocked — no real backend exists
+  - MSW handlers in src/mocks/handlers/, seed data in src/mocks/data/
+  - Shared form components accept defaultValues for edit mode and onSubmit/onCancel/isSubmitting props
+  - Skeleton components shown during React Query loading states
+
+  Roles:
+  - admin: full access to all pages including /employees
+  - user: access to /dashboard and /vehicles only
+
+rules:
+  proposal:
+    - Keep proposals concise — under 400 words
+    - Include a "Non-goals" section to define scope boundaries
+    - Write in Traditional Chinese (繁體中文) for the problem/solution description
+  design:
+    - Reference existing patterns (e.g., "follow the same pattern as VehicleForm") when extending the app
+    - Call out any Tailwind v4 or MSW v2 specific considerations explicitly, since these differ from v3/v1 docs
+  specs:
+    - Write requirements and scenarios in Traditional Chinese
+    - Use SHALL / MUST for normative requirements
+    - Each scenario must follow WHEN / THEN / AND format
+  tasks:
+    - Break tasks into small, independently completable steps (30–60 min each)
+    - Group tasks by feature area with numbered headings
+    - List tasks in dependency order (types → hooks → components → pages → integration)
