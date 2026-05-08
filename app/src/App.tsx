@@ -9,6 +9,7 @@ import { LoginPage } from '@/pages/LoginPage'
 import { DashboardPage } from '@/pages/DashboardPage'
 import { VehiclesPage } from '@/pages/VehiclesPage'
 import { EmployeesPage } from '@/pages/EmployeesPage'
+import { ActivityLogPage } from '@/pages/ActivityLogPage'
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
                 <Route path="/vehicles" element={<VehiclesPage />} />
                 <Route element={<AdminRoute />}>
                   <Route path="/employees" element={<EmployeesPage />} />
+                  <Route path="/admin/activity-log" element={<ActivityLogPage />} />
                 </Route>
               </Route>
             </Route>
