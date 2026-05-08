@@ -1,5 +1,5 @@
 import { Link, Outlet, useLocation } from 'react-router-dom'
-import { Car, Users, LayoutDashboard, LogOut } from 'lucide-react'
+import { Car, Users, LayoutDashboard, LogOut, ClipboardList } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useAuth } from '@/hooks/useAuth'
 import { cn } from '@/lib/utils'
@@ -11,6 +11,7 @@ const navItems = [
 
 const adminNavItems = [
   { to: '/employees', label: '員工管理', icon: Users },
+  { to: '/admin/activity-log', label: '使用者紀錄', icon: ClipboardList },
 ]
 
 export function AppLayout() {

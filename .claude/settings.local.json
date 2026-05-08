@@ -13,7 +13,9 @@
       "Bash(powershell -Command \"New-Item -ItemType Directory -Force -Path 'd:\\\\Project\\\\Claude\\\\ClaudeCodeWorkshop\\\\app\\\\src\\\\components\\\\ui' | Out-Null; Copy-Item -Path 'd:\\\\Project\\\\Claude\\\\ClaudeCodeWorkshop\\\\app\\\\@\\\\components\\\\ui\\\\*' -Destination 'd:\\\\Project\\\\Claude\\\\ClaudeCodeWorkshop\\\\app\\\\src\\\\components\\\\ui\\\\' -Recurse; Remove-Item -Path 'd:\\\\Project\\\\Claude\\\\ClaudeCodeWorkshop\\\\app\\\\@' -Recurse -Force; Write-Host Done\")",
       "Bash(npx msw *)",
       "Bash(npm run *)",
-      "Bash(node -e \"const p = JSON.parse\\(require\\('fs'\\).readFileSync\\('package.json','utf8'\\)\\); console.log\\(JSON.stringify\\(p.scripts, null, 2\\)\\)\")"
+      "Bash(node -e \"const p = JSON.parse\\(require\\('fs'\\).readFileSync\\('package.json','utf8'\\)\\); console.log\\(JSON.stringify\\(p.scripts, null, 2\\)\\)\")",
+      "Bash(npx tsc *)",
+      "Bash(New-Item -ItemType Directory -Path \"D:\\\\Project\\\\Claude\\\\ClaudeCodeWorkshop\\\\openspec\\\\specs\\\\activity-log\" -Force)"
     ]
   }
 }
